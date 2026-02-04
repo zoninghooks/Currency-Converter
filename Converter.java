@@ -21,6 +21,11 @@ public class Converter {
 
         HttpResponse<String> response = client.send(getRequest, HttpResponse.BodyHandlers.ofString());
 
-        System.out.println(response.body());
+        String json = response.body();
+        
+        if (!json.contains("\"result\":\"success\""))
+            System.out.println("API call was unsuccessful. Response:");
+            System.out.println(json);
+            return;
     }
 }

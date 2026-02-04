@@ -1,5 +1,7 @@
 package CurrencyConverter;
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;

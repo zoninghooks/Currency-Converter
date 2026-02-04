@@ -11,7 +11,7 @@ public class Converter {
     public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException {
 
         HttpRequest getRequest = HttpRequest.newBuilder()
-                .uri(new URI("https://v6.exchangerate-api.com/v6/be92ae17fd7c588675038ca9/latest/USD"))
+                .uri(new URI("https://v6.exchangerate-api.com/v6/be92ae17fd7c588675038ca9/latest/USD")) // 1 usd to x currency (daily refreshed)
                 .GET()
                 .build();
 
